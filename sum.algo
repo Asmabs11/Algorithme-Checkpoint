@@ -1,0 +1,49 @@
+ALGORITHM checkpoint
+
+
+VAR
+  q,m,s,i,j,k:INTEGER.
+  sentence : STRING;
+  
+    BEGIN
+
+    
+    write ("characters");
+    Read(sentence);
+    
+   s:=0;
+
+FOR i FROM 0 TO sentence.length DO
+    s:=s+1
+
+END_FOR
+write ("the lenght is" , s);
+   m:=0;
+
+ FOR j FROM 0 TO s-1   DO
+ IF (sentence[j]<> "." or sentence [j]<> " " ) THEN
+    m:=m+1;
+ END_IF
+
+
+    
+ END_FOR
+
+ write ("afficher", m );
+   
+    q:=0;
+   
+   FOR k FROM 0 TO s-1  DO
+   IF (sentence[k] in[a,e,i,u,o , A,E,I,U,O] ) THEN
+    q:=q+1;
+   
+    write("afficher , q");
+  
+   END_IF
+      
+
+   END_FOR
+
+   END
+   
+   
